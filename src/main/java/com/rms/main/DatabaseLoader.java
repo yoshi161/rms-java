@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.greglturnquist.payroll;
+package com.rms.main;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;

@@ -1,6 +1,8 @@
-package com.greglturnquist.payroll;
+package com.rms.main;
 
 import java.util.List;
+
+import com.rms.pojo.Employee;
 
 public interface EmployeeService {
 	

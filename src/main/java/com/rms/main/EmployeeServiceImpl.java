@@ -1,4 +1,4 @@
-package com.greglturnquist.payroll;
+package com.rms.main;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -8,6 +8,10 @@ import java.util.List;
 import org.apache.log4j.Logger;
 import org.apache.log4j.Priority;
 import org.springframework.stereotype.Service;
+
+import com.rms.pojo.Employee;
+import com.rms.pojo.History;
+import com.rms.pojo.Location;
 
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
@@ -25,6 +29,9 @@ public class EmployeeServiceImpl implements EmployeeService {
         				new ArrayList<Location>(){{
         					add(new Location(new Date(), new Date(), "JOG", "Jl. Raya Taman Bungkul") );
         					add(new Location(new Date(), new Date(), "DPS", "Jl. Raya Taman Bungkul II") );
+        				}},
+        				new ArrayList<History>() {{
+        					add(new History());
         				}}));
         		
         		add(new Employee("don_c", "Don",
@@ -34,6 +41,9 @@ public class EmployeeServiceImpl implements EmployeeService {
         				new ArrayList<Location>(){{
         					add(new Location(new Date(), new Date(), "JOG", "Jl. Raya Taman Bungkul") );
         					add(new Location(new Date(), new Date(), "DPS", "Jl. Raya Taman Bungkul") );
+        				}},
+        				new ArrayList<History>() {{
+        					add(new History());
         				}}));
         	}
     	};

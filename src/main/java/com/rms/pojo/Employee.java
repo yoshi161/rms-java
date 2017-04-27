@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.greglturnquist.payroll;
+package com.rms.pojo;
 
 import java.util.List;
 /*import javax.persistence.Entity;
@@ -49,13 +49,15 @@ public class Employee {
 	private Boolean active;
 	private String location;
 	private List<Location> locations;
+	private List<History> histories;
 
 
 	public Employee(String userName, String firstName, String lastName,
 			String grade, String gender, String description, String nationality,
 			String maritalStatus, String phone, String subDivision,
 			String status, String division, String email, String office,
-			Boolean active, String location, List<Location> locations) {
+			Boolean active, String location, List<Location> locations,
+			List<History> histories) {
 		super();
 		this.userName = userName;
 		this.firstName = firstName;
@@ -74,6 +76,7 @@ public class Employee {
 		this.active = active;
 		this.location = location;
 		this.locations = locations;
+		this.histories = histories;
 	}
 	
 	
@@ -234,6 +237,19 @@ public class Employee {
 		this.locations = locations;
 	}
 
+
+
+	public List<History> getHistories() {
+		return histories;
+	}
+
+
+
+	public void setHistories(List<History> histories) {
+		this.histories = histories;
+	}
+	
+	
 	
 
 }
