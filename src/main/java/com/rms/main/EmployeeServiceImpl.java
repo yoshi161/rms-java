@@ -10,6 +10,7 @@ import org.apache.log4j.Priority;
 import org.springframework.stereotype.Service;
 
 import com.rms.pojo.Employee;
+import com.rms.pojo.Family;
 import com.rms.pojo.History;
 import com.rms.pojo.Location;
 
@@ -32,6 +33,9 @@ public class EmployeeServiceImpl implements EmployeeService {
         				}},
         				new ArrayList<History>() {{
         					add(new History());
+        				}},
+        				new ArrayList<Family>() {{
+        					add(new Family("Siti Aminah", "M", new Date(), "W", true));
         				}}));
         		
         		add(new Employee("don_c", "Don",
@@ -44,6 +48,9 @@ public class EmployeeServiceImpl implements EmployeeService {
         				}},
         				new ArrayList<History>() {{
         					add(new History());
+        				}},
+        				new ArrayList<Family>() {{
+        					add(new Family("Siti Aminah", "M", new Date(), "W", true));
         				}}));
         	}
     	};

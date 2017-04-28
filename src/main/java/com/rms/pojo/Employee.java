@@ -50,6 +50,7 @@ public class Employee {
 	private String location;
 	private List<Location> locations;
 	private List<History> histories;
+	private List<Family> families;
 
 
 	public Employee(String userName, String firstName, String lastName,
@@ -57,7 +58,7 @@ public class Employee {
 			String maritalStatus, String phone, String subDivision,
 			String status, String division, String email, String office,
 			Boolean active, String location, List<Location> locations,
-			List<History> histories) {
+			List<History> histories, List<Family> families) {
 		super();
 		this.userName = userName;
 		this.firstName = firstName;
@@ -77,6 +78,7 @@ public class Employee {
 		this.location = location;
 		this.locations = locations;
 		this.histories = histories;
+		this.families = families;
 	}
 	
 	
@@ -237,19 +239,21 @@ public class Employee {
 		this.locations = locations;
 	}
 
-
-
 	public List<History> getHistories() {
 		return histories;
 	}
 
-
-
 	public void setHistories(List<History> histories) {
 		this.histories = histories;
 	}
-	
-	
+
+	public List<Family> getFamilies() {
+		return families;
+	}
+
+	public void setFamilies(List<Family> families) {
+		this.families = families;
+	}
 	
 
 }
