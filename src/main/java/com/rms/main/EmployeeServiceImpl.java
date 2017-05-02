@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import com.rms.pojo.Employee;
 import com.rms.pojo.Family;
+import com.rms.pojo.Grade;
 import com.rms.pojo.History;
 import com.rms.pojo.Location;
 
@@ -36,7 +37,11 @@ public class EmployeeServiceImpl implements EmployeeService {
         				}},
         				new ArrayList<Family>() {{
         					add(new Family("Siti Aminah", "M", new Date(), "W", true));
-        				}}));
+        				}},
+        				new ArrayList<Grade>() {{
+        					add(new Grade("1", "SE2", new Date(), new Date()));
+        				}}
+        				));
         		
         		add(new Employee("don_c", "Don",
         				"Corleone", "SE2", "M", "Nope", "Indonesia",
@@ -51,6 +56,9 @@ public class EmployeeServiceImpl implements EmployeeService {
         				}},
         				new ArrayList<Family>() {{
         					add(new Family("Siti Aminah", "M", new Date(), "W", true));
+        				}},
+        				new ArrayList<Grade>() {{
+        					add(new Grade("1", "SE1", new Date(), new Date()));
         				}}));
         	}
     	};
